@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Portal | Pure CSS/JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <div class="content">
+        <form class="auth-box" id="loginForm">
+            <h1 class="title">Welcome Back</h1>
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email</label>
+                <span class="highlight"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" required>
+                <label>Password</label>
+                <span class="highlight"></span>
+            </div>
+            <button class="auth-button">Sign In</button>
+            <p class="switch-text">New here? <span class="switch-link" data-target="signup">Create Account</span></p>
+        </form>
+
+        <form class="auth-box hidden" id="signupForm">
+            <h1 class="title">Join Us</h1>
+            <div class="input-group">
+                <input type="text" required>
+                <label>Username</label>
+                <span class="highlight"></span>
+            </div>
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email</label>
+                <span class="highlight"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" required>
+                <label>Password</label>
+                <span class="highlight"></span>
+            </div>
+            <button class="auth-button">Sign Up</button>
+            <p class="switch-text">Already have an account? <span class="switch-link" data-target="login">Sign In</span></p>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
